@@ -4,7 +4,8 @@ import { Route, Switch } from "react-router-dom";
 import Dashboard from "./components/Layout/Dashboard";
 
 import HomeScreen from "./screens/Home/HomeScreen";
-import PlacesScreen from "./screens/Place/PlacesScreen";
+import PlaceListScreen from "./screens/Place/PlaceListScreen";
+import PlaceCreateScreen from "./screens/Place/PlaceCreateScreen";
 
 const App = () => {
   return (
@@ -12,7 +13,12 @@ const App = () => {
       <Dashboard />
       <Switch>
         <Route path="/dashboard" component={HomeScreen} exact />
-        <Route path="/dashboard/places" component={PlacesScreen} exact />
+        <Route path="/dashboard/places" component={PlaceListScreen} exact />
+        <Route
+          path="/dashboard/place/create"
+          component={PlaceCreateScreen}
+          exact
+        />
       </Switch>
     </div>
   );

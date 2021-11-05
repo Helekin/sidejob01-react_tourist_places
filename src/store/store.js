@@ -3,9 +3,11 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 import { userLoginReducer } from "./reducers/user";
+import { placesListReducer } from "./reducers/place";
 
 const reducer = combineReducers({
   userLogin: userLoginReducer,
+  placesList: placesListReducer,
 });
 
 const userInfoFromStorage = localStorage.getItem("userInfo")
