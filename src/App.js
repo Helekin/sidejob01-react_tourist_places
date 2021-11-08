@@ -13,7 +13,7 @@ const App = () => {
       <Dashboard />
       <Switch>
         <Route path="/dashboard" component={HomeScreen} exact />
-        <Route path="/dashboard/places" component={PlaceListScreen} exact />
+        <Route path="/dashboard/places" component={PlaceListScreen} />
         <Route
           path="/dashboard/place/create"
           component={PlaceCreateScreen}

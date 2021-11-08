@@ -58,7 +58,7 @@ const LoginForm = (props) => {
           App de Lugares Turísticos de Tungurahua - Admin
         </Typography>
         {error && <Message severity="error">{error}</Message>}
-        <Box component="form" sx={{ mt: 1 }} onSubmit={submitHandler}>
+        <Box component="form" sx={{ mt: 1 }} onSubmit={(e) => submitHandler(e)}>
           <TextField
             margin="normal"
             required
@@ -92,14 +92,6 @@ const LoginForm = (props) => {
           >
             Iniciar Sesion
           </LoadingButton>
-          {/* <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            sx={{ mt: 3, mb: 2 }}
-          >
-            Iniciar Sesión
-          </Button> */}
           <Copyright sx={{ mt: 5 }} />
         </Box>
       </Box>

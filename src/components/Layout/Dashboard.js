@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Link, Redirect, withRouter } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 import { styled } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -203,4 +203,4 @@ const Dashboard = () => {
   );
 };
 
-export default withRouter(Dashboard);
+export default Dashboard;
