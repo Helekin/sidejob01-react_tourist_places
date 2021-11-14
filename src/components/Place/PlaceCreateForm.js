@@ -45,10 +45,10 @@ const PlaceCreateForm = (props) => {
   const [selectedImages, setSelectedImages] = useState([]);
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState();
   const [address, setAddress] = useState("");
-  const [latitude, setLatitude] = useState(0);
-  const [longitude, setLongitude] = useState(0);
+  const [latitude, setLatitude] = useState();
+  const [longitude, setLongitude] = useState();
   const [phone, setPhone] = useState("");
   const [cellphone, setCellphone] = useState("");
   const [activities, setActivities] = useState([""]);
